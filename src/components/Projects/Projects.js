@@ -45,6 +45,18 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={causeway}
+              isBlog={false}
+              title="Code Bin"
+              description="CodeBin is a web application built with Angular,
+                Angular Material, NgRx, RxJS, and Firebase. It allows users to securely store and edit their code snippets in the cloud."
+              ghLink="https://github.com/MAVRICK-1/causewaylogin"
+              demoLink="https://causewaylogin.vercel.app/singup"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={CountryInfoWeb}
               isBlog={false}
               title="Country Info Web"
@@ -78,17 +90,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={causeway}
-              isBlog={false}
-              title="Causeway login"
-              description="This is the demo login and signup page using angular, firebase and angular material . It is connected to firebase .It
-              contains pop-up for error handeling and also contains form validation."
-              ghLink="https://github.com/MAVRICK-1/causewaylogin"
-              demoLink="https://causewaylogin.vercel.app/singup"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>

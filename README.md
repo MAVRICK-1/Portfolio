@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="" target="_blank">Rishi Mondal</a>
+  <a href="https://mavrick-portfolio.vercel.app/" target="_blank">Rishi Mondal</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img.png" />
