@@ -16,6 +16,14 @@ import {
   SiPostgresql,
   SiAngular,
   SiNeo4J,
+  SiAnsible,
+  SiDocker,
+  SiKubernetes,
+  SiTypescript,
+  SiGo,
+  SiPrometheus,
+  SiGrafana,
+
 } from "react-icons/si";
 import { TbBrandGithub } from "react-icons/tb";
 
@@ -24,6 +32,24 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGo/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPrometheus/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGrafana/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -45,6 +71,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAngular />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAnsible />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />

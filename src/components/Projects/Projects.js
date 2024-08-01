@@ -3,11 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import causeway from "../../Assets/Projects/Causeway.png";
-import githubusers from "../../Assets/Projects/Githubusers.png";
 import CountryInfoWeb from "../../Assets/Projects/CountryInfoWeb.png";
 import ondc from "../../Assets/Projects/ONDC.png";
 import brainwave from "../../Assets/Projects/Brainwave.png";
 import iyp from "../../Assets/Projects/IYP.png";
+import generativeAi from "../../Assets/Projects/RishiAi.jpg";
+import speechEmotion from "../../Assets/Projects/SpeechEmotion.png";
+import deviceMonitoring from "../../Assets/Projects/DeviceMonitoring.png";
 
 
 function Projects() {
@@ -35,11 +37,58 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={generativeAi}
+              isBlog={false}
+              title="RishiAi - ChatBot CLI"
+              description="RishiAi is a command-line interface (CLI) AI ChatBot that uses Google’s Gemini API to generate natural language response . You can chat with RishiAi about anything, from images to documents, and have fun and engaging conversations"
+              ghLink="https://github.com/MAVRICK-1/Rishi-AI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={speechEmotion}
+              isBlog={false}
+              title="Speech Emotion Recognition using NLP Audio & Text"
+              description="Human-Computer interactions make it mandatory to get accurate communications, like both humans. If
+computer identification means we will get clever interaction We might be on the verge of too many
+screens. It seems like everyday, new versions of common objects are “re-invented” with built-in Wi-Fi
+and bright touchscreens. A promising antidote to our screen addiction are voice interfaces"
+              ghLink="https://github.com/MAVRICK-1/Rishi-AI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={iyp}
               isBlog={false}
               title="IYP (Internet Yellow Pages) Python Library"
               description="The IYP Python library is a lightweight query tool designed to simplify interactions with Neo4j DBMS. By encapsulating common query operations and providing a user-friendly interface, the library streamlines the process of retrieving and analyzing data from Neo4j databases."
               ghLink="https://github.com/MAVRICK-1/IYP_Lib"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={deviceMonitoring}
+              isBlog={false}
+              title="Device Monitoring"
+              description="This project demonstrates the integration of a Go-based web application with Prometheus and Grafana for monitoring and metrics visualization. The application simulates device management, providing endpoints to register devices, manage device firmware, and handle user logins."
+              ghLink="https://github.com/MAVRICK-1/IYP_Lib"
+            />
+          </Col>
+
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={brainwave}
+              isBlog={false}
+              title="Brainwave"
+              description="Brainwave is a modern UI/UX website developed using React.js and Tailwind CSS. It showcases contemporary design principles with its sleek layout, seamless animations, and exceptional user experience. This project serves as a reference or inspiration for future modern applications or websites."
+              ghLink="https://github.com/MAVRICK-1/Brainwave"
+              demoLink="https://brainwave-hazel.vercel.app/"
             />
           </Col>
 
@@ -67,29 +116,7 @@ function Projects() {
               demoLink="https://mavrick-country-web.netlify.app/#/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={githubusers}
-              isBlog={false}
-              title="Github user Search"
-              description="A basic and straightforward user interface has been developed utilizing Material UI, AngularJS, and RxJS for the purpose of searching GitHub users."
-              ghLink="https://github.com/MAVRICK-1/Github-user-search"
-              demoLink="https://github-user-search-one-delta.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={brainwave}
-              isBlog={false}
-              title="Brainwave"
-              description="Brainwave is a modern UI/UX website developed using React.js and Tailwind CSS. It showcases contemporary design principles with its sleek layout, seamless animations, and exceptional user experience. This project serves as a reference or inspiration for future modern applications or websites."
-              ghLink="https://github.com/MAVRICK-1/Brainwave"
-              demoLink="https://brainwave-hazel.vercel.app/"
-            />
-          </Col>
-
+          
         </Row>
       </Container>
     </Container>
